@@ -1,0 +1,21 @@
+{
+  "name": "gms2-organizer",
+  "version": "1.0.0",
+  "description": "A small app to organize GMS2 project resources",
+  "main": "src/electron.js",
+  "scripts": {
+    "start": "electron .",
+    "package.mac": "electron-packager . --platform=darwin --out=./bin --ignore=/bin --asar --overwrite=true",
+    "package.win64": "electron-packager ./src --platform=win32 --arch=x64 --out=./bin --ignore=/bin --asar --overwrite=true"
+  },
+  "keywords": [
+    "electron",
+    "GameMaker Studio 2"
+  ],
+  "author": "Chris Anselmo <christopherwk210@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.8.4",
+    "electron-packager": "^11.1.0"
+  }
+}

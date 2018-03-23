@@ -1,0 +1,30 @@
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: default;
+}
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+  background: rgb(40, 40, 40);
+  font-size: 32px;
+  font-family: 'IBM Plex Mono';
+  color: white;
+}
+
+.drop-target {
+  border: 1px solid rgb(19, 144, 86);
+  border-radius: 6px;
+  position: absolute;
+  top: 1.5em;
+  bottom: 1.5em;
+  left: 1.5em;
+  right: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #444;
+  text-align: center;
+}
